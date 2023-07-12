@@ -15,7 +15,7 @@ Packages needed :
 + Django course headers
 
 To activate this project's virtual environment, run :
-```run pipenv shell
+```run pipenv shell```
 
 Alternatively, run a command inside the virtualenv with :
-```pipenv run
+```pipenv run```
