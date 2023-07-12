@@ -1,6 +1,5 @@
 # PORTFOLIO - Project N°5
-
-## This repository contains my code portfolio. 
+> This project contain my portfolio code.
 
 ### Technologies :
 + FrontEnd : React.js
@@ -18,7 +17,7 @@ Alternatively, run a command inside the virtualenv with :
 pipenv run
 ```
 
-Packages needed :
+### Packages needed :
 + Django rest framework
 + Django course headers
 
