@@ -5,22 +5,18 @@
 python_version = "3.11"
 
 ### Technologies :
-+ FrontEnd : React.js
-+ BackEnd : Django
++ FrontEnd : Nextjs
++ BackEnd : Flask
 
 In this project I will  work in a virtual environments :
 
-+ pipenv
++ venv
 To activate this project's virtual environment, run :
 ```
-run pipenv shell
+source venv/bin/activate
 ``` 
-Alternatively, run a command inside the virtualenv with :
-```
-pipenv run
-```
+
 
 ### Packages needed :
-+ Django rest framework
-+ Django course headers
+
 
