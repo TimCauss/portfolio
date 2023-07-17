@@ -10,7 +10,7 @@ import 'tachyons';
 //Style : 
 import './index.css';
 
-import App from './App';
+import App from './containers/App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
