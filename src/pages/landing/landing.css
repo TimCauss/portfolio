@@ -3,6 +3,7 @@
 .landing .name {
   font-size: 48px;
 }
+
 .landing .description {
   font-size: 22px;
 }
@@ -21,6 +22,11 @@
   left: 50px;
   bottom: 20px;
 }
+
+.skillsAnimation {
+  width: 200px;
+}
+
 
 /* --- MEDIA QUERIES --- */
 

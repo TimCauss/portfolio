@@ -1,5 +1,11 @@
 /* --- MOBILE STYLES --- */
 
+html,
+body {
+  height: 100%;
+  
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;

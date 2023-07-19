@@ -8,10 +8,10 @@ const PageNotFound = () => {
       <div className="error-description">
         <div className="row">
           <div className="col">
-            <p>Sorry, the page you are looking for does not exist.</p>
-            <p>Please double-check the URL or navigate to another section of the site.</p>
+            <p>Le page que vous recherchez n'existe pas.</p>
+            <p>Vérifiez bien l'URL ou naviguez vers une autre partie du site.</p>
             <Link to="/" className="home">
-              <button className="btn">Return to Home</button>
+              <button className="btn">Retour à l'accueil</button>
             </Link>
           </div>
         </div>

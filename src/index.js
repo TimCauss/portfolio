@@ -10,6 +10,7 @@ import "./pages/404/pageNotFound.css";
 import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
+import Cursor from "./components/Cursor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

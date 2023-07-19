@@ -1,6 +1,7 @@
 import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
+import Cursor from "../../components/Cursor";
 
 const Portfolio = () => {
   const ProjectList = () =>
@@ -20,6 +21,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
+      <Cursor />
       <PageHeader title="Portfolio" description="Mes projets" />
       <div className="row">
         <ProjectList />

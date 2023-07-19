@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-// import landingImage from "../../images/me.svg";
-import Draw from "../../components/Draw";
+// import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
+import SkillsItems from "../../components/SkillsItems/SkillsItems";
+import Particles from "react-particles";
+import Cursor from "../../components/Cursor";
 
 const Landing = ({ name }) => {
   const styles = {
@@ -11,14 +13,6 @@ const Landing = ({ name }) => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-    },
-
-    landingImage: {
-      position: "absolute",
-      bottom: "0",
-      opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "80%",
     },
 
     textContainer: {
@@ -34,14 +28,15 @@ const Landing = ({ name }) => {
     name: {
       color: "#fff",
       fontWeight: "700",
-      marginTop: "-100px",
+      marginTop: "-300px",
       paddingBottom: "28px",
     },
   };
 
   return (
-    <section className="landing" style={styles.landing}>
-      <Draw />
+    <section className="landing" id="repulsor" style={styles.landing}>
+      {/* <Draw /> */}
+      <Cursor />
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" style={styles.name}>
           {name}
@@ -60,22 +55,13 @@ const Landing = ({ name }) => {
                 .typeString("Create. ")
                 .pauseFor(500)
                 .typeString("Innovate.")
-
                 .start();
             }}
           />
         </div>
-      </div>
-      <div className="image-container">
-{/*         <motion.img
-          className="landingImage"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.4 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          style={styles.landingImage}
-          src={landingImage}
-          alt="Michael Yeates"
-        /> */}
+        <div className="pt-5">
+          <SkillsItems />
+        </div>
       </div>
       <SocialIcons />
     </section>
