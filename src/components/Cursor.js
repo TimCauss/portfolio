@@ -75,7 +75,7 @@ const Cursor = () => {
             },
             onHover: {
               enable: true,
-              mode: ["bubble", "grab", "connect"],
+              mode: ["bubble", "grab", "attract"],
             },
             resize: true,
           },
@@ -90,13 +90,12 @@ const Cursor = () => {
               opacity: 1,
               color: "#009e66",
             },
-            grab: {
-              distance: 200,
-              links: {
-                opacity: 1,
-                consent: true,
-                color: "#009e66",
-              },
+            attract: {
+              distance: 100,
+              duration: 0.4,
+              factor: 3,
+              speed: 1,
+              easing: "ease-out-quad",
             },
             connect: {
               distance: "200",
