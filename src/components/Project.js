@@ -15,11 +15,9 @@ const Project = ({
   description,
 }) => {
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
     triggerOnce: true,
   });
-
-  let links = "";
 
   const variants = {
     hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
@@ -58,6 +56,8 @@ const Project = ({
         </div>
       </div>
       <Modal
+        closeTimeoutMS={200}
+        openTimeoutMS={200}
         isOpen={showModal}
         onRequestClose={handleCloseModal}
         style={{

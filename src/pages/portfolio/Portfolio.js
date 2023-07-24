@@ -21,7 +21,6 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
-      <Cursor />
       <PageHeader title="Mes Projets" />
       <div className="row">
         <ProjectList />

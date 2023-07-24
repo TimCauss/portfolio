@@ -25,7 +25,7 @@ const Cursor = () => {
         },
         fullScreen: {
           enable: true,
-          zIndex: 1,
+          zIndex: 0,
         },
         fpsLimit: 120,
         particles: {
