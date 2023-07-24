@@ -52,7 +52,9 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Ravi de vous rencontrer</h4>
-            <h5>Je suis un développeur spécialisé dans la création d'expériences numériques exceptionnelles !</h5>
+            <h5>
+              Je suis un développeur spécialisé en web, python et Cybersécurité.
+            </h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -81,7 +83,10 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
             </div>
             <div className="buttonContainer">
-              <button className="btn downloadCV" /*onClick={handleDownload}*/ disabled={downloading}>
+              <button
+                className="btn downloadCV"
+                /*onClick={handleDownload}*/ disabled={downloading}
+              >
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />

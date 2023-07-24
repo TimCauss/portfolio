@@ -4,11 +4,22 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const Project = ({ technologies, title, image, color, id, github, deployed, description }) => {
+const Project = ({
+  technologies,
+  title,
+  image,
+  color,
+  id,
+  github,
+  deployed,
+  description,
+}) => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
     triggerOnce: true,
   });
+
+  let links = "";
 
   const variants = {
     hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
@@ -67,13 +78,18 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
           },
         }}
       >
-        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+        <img
+          src={closeModal}
+          className="closeMenu closeModal"
+          onClick={handleCloseModal}
+          alt="Close"
+        ></img>
         <h3 className="modalTitle">{title}</h3>
         <p className="projectDescription">{description}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
+        <button className="btn" onClick={() => window.open(github, "_blank")}>
           GitHub Repo
         </button>
-        <button className="btn" onClick={() => (window.location.href = deployed)}>
+        <button className="btn" onClick={() => window.open(deployed, "_blank")}>
           Live Link
         </button>
       </Modal>

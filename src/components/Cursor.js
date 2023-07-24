@@ -20,12 +20,12 @@ const Cursor = () => {
       options={{
         background: {
           color: {
-            value: "#101010",
+            value: "#1010100",
           },
         },
         fullScreen: {
           enable: true,
-          zIndex: -1,
+          zIndex: 1,
         },
         fpsLimit: 120,
         particles: {

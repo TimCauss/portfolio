@@ -22,7 +22,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <Cursor />
-      <PageHeader title="Portfolio" description="Mes projets" />
+      <PageHeader title="Mes Projets" />
       <div className="row">
         <ProjectList />
       </div>

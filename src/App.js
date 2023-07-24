@@ -8,7 +8,7 @@ function App() {
     email: "t.caussignac@gmail.com",
     availability: "Freelance",
     brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
+      "Passionné par le développement et fasciné par la cybersécurité, je suis déterminé à créer des expériences digitales innovantes et sécurisées. N'hésitez pas à me contacter pour collaborer sur des projets passionnants et sécurisés ensemble !",
   };
 
   return (

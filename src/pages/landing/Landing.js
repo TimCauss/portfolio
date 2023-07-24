@@ -9,10 +9,9 @@ import Cursor from "../../components/Cursor";
 const Landing = ({ name }) => {
   const styles = {
     landing: {
-      height: "calc(100% - 93px)",
       display: "flex",
       justifyContent: "center",
-      alignItems: "center",
+      alignItems: "center"
     },
 
     textContainer: {
@@ -28,7 +27,6 @@ const Landing = ({ name }) => {
     name: {
       color: "#fff",
       fontWeight: "700",
-      marginTop: "-300px",
       paddingBottom: "28px",
     },
   };
@@ -47,14 +45,14 @@ const Landing = ({ name }) => {
             onInit={(typewriter) => {
               typewriter
                 .changeDelay(80)
-                .typeString("Je suis développeur fullstack")
+                .typeString("Développeur")
                 .pauseFor(1500)
                 .deleteAll()
-                .typeString("Code. ")
+                .typeString("Python, ")
                 .pauseFor(500)
-                .typeString("Create. ")
+                .typeString("Web et ")
                 .pauseFor(500)
-                .typeString("Innovate.")
+                .typeString("Cybersécurité.")
                 .start();
             }}
           />

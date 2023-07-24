@@ -1,18 +1,15 @@
 /* --- MOBILE STYLES --- */
 
-html,
-body {
-  height: 100%;
-  
-}
-
 .portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  margin-top: var(--spacing);
   padding-bottom: var(--spacing);
+}
+
+.portfolio>* {
+  z-index: 2;
 }
 
 .projectCard {
