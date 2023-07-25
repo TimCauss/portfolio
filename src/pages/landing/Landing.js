@@ -1,9 +1,7 @@
-import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 // import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 import SkillsItems from "../../components/SkillsItems/SkillsItems";
-import Particles from "react-particles";
 import Cursor from "../../components/Cursor";
 
 const Landing = ({ name }) => {
@@ -11,7 +9,7 @@ const Landing = ({ name }) => {
     landing: {
       display: "flex",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
     },
 
     textContainer: {
@@ -46,20 +44,18 @@ const Landing = ({ name }) => {
               typewriter
                 .changeDelay(80)
                 .typeString("Développeur")
-                .pauseFor(1500)
+                .pauseFor(2500)
                 .deleteAll()
                 .typeString("Python, ")
                 .pauseFor(500)
-                .typeString("Web et ")
+                .typeString("Web, ")
                 .pauseFor(500)
                 .typeString("Cybersécurité.")
                 .start();
             }}
           />
         </div>
-        <div className="pt-5">
-          <SkillsItems />
-        </div>
+        <SkillsItems />
       </div>
       <SocialIcons />
     </section>

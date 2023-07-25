@@ -19,8 +19,7 @@
 .landing .socialIcons {
   display: flex;
   position: absolute;
-  left: 50px;
-  bottom: 20px;
+  top: 20px;
 }
 
 .skillsAnimation {
@@ -46,5 +45,7 @@
 
   .landing .socialIcons {
     flex-direction: column;
+    top: 85vh;
+    left: 20px
   }
 }

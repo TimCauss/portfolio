@@ -18,35 +18,35 @@ class SkillsItems extends React.Component {
   render() {
     return (
       <>
-        <div className="row flex">
-          <div className="skillsAnimation align-items-center center">
+        <div className="row pt-5 d-flex align-content-center justify-content-center">
+          <div className="skillsAnimation align-items-center">
             <Lottie
               lottieRef={this.htmlLogoRef}
-              className="appLogo"
+              className="appLogo logoHtml"
               animationData={animHtml}
               loop={false}
             />
           </div>
-          <div className="skillsAnimation align-items-center">
+          <div className="skillsAnimation align-items-center justify-content-center">
             <Lottie
               lottieRef={this.reactLogoRef}
-              className="appLogo"
+              className="appLogo logoReact"
               animationData={animReact}
               loop={false}
             />
           </div>
-          <div className="skillsAnimation mt-3 align-items-center">
+          <div className="skillsAnimation align-items-center justify-content-center">
             <Lottie
               lottieRef={this.pythonLogoRef}
-              className="appLogo"
+              className="appLogo logoPython"
               animationData={animPython}
               loop={false}
             />
           </div>
-          <div className="skillsAnimation mt-2 align-items-center">
+          <div className="skillsAnimation align-items-center justify-content-center">
             <Lottie
               lottieRef={this.jsLogoRef}
-              className="appLogo"
+              className="appLogo logoJS"
               animationData={animJs}
               loop={false}
             />

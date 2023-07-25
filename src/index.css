@@ -113,6 +113,7 @@ header {
 
 .logo {
   height: 50px;
+  opacity: 0;
 }
 
 .links {

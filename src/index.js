@@ -6,6 +6,7 @@ import "./pages/about/about.css";
 import "./pages/portfolio/portfolio.css";
 import "./pages/contact/contact.css";
 import "./pages/404/pageNotFound.css";
+import "./components/SkillsItems/skillsitems.css";
 
 import App from "./App";
 
