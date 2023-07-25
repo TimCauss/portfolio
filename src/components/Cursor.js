@@ -54,7 +54,7 @@ const Cursor = () => {
               enable: true,
               area: 800,
             },
-            value: 20,
+            value: 30,
           },
           opacity: {
             value: { min: 0.2, max: 0.5 },
@@ -97,7 +97,7 @@ const Cursor = () => {
               speed: 1,
               easing: "ease-out-quad",
             },
-            connect: {
+            grab: {
               distance: "200",
               radius: "200",
               links: {
