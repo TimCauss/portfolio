@@ -9,7 +9,6 @@ const Form = () => {
     triggerOnce: true,
   });
 
-
   const [success, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -34,15 +33,17 @@ const Form = () => {
       .sendForm(
         "service_csh3ewg",
         "template_d3p6njf",
-        motion.current,
+        "#email-form",
         "IGMG-FwxsZroQFzBB"
       )
       .then(
         (result) => {
+          setSuccess(true);
           console.log(result.text);
         },
         (error) => {
-          console.log(error);
+          setSuccess(false);
+          console.log(error.text);
         }
       );
   };
@@ -51,6 +52,7 @@ const Form = () => {
     <motion.form
       action=""
       ref={ref}
+      id="email-form"
       className="contactForm"
       initial={{ x: "-10vw", opacity: 0 }}
       animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
