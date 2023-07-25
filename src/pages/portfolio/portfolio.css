@@ -121,7 +121,7 @@
   }
 
   .projectCard:hover .imageContainer img {
-    scale: 1.4;
+    scale: 2;
   }
 
   .imageContainer {
