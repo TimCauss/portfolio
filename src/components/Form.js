@@ -1,12 +1,14 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true,
   });
+
 
   const [success, setSuccess] = useState(false);
 
@@ -28,31 +30,21 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const data = JSON.stringify(formData);
-
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: data,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setSuccess(true);
-        setFormData({
-          ...formData,
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setTimeout(() => {
-          setSuccess(false);
-        }, 3000);
-      })
-      .catch((err) => console.log(err));
+    emailjs
+      .sendForm(
+        "service_csh3ewg",
+        "template_d3p6njf",
+        motion.current,
+        "IGMG-FwxsZroQFzBB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   };
 
   return (
@@ -66,7 +58,10 @@ const Form = () => {
       onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Envoyer un message</h4>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="text"
           className="formControl"
@@ -78,7 +73,10 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="email"
           className="formControl"
@@ -115,7 +113,9 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message envoyé" : "Envoyer"}</button>
+        <button className="btn">
+          {success ? "Message envoyé" : "Envoyer"}
+        </button>
       </div>
     </motion.form>
   );
