@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-// import resume from "../pages/about/michael-yeates-resume.pdf";
+import resume from "../pages/about/timothee-caussignac-cv.pdf";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
@@ -17,18 +17,18 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(false);
   }, [downloading]);
 
-  // const handleDownload = () => {
-  //   setDownloading(true);
-  //   const link = document.createElement("a");
-  //   link.href = resume;
-  //   link.download = "Michael-Yeates-Resume.pdf";
-  //   link.onload = () => {
-  //     link.remove();
-  //     setDownloading(false);
-  //   };
-  //   document.body.appendChild(link);
-  //   link.click();
-  // };
+  const handleDownload = () => {
+    setDownloading(true);
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Timothee_caussignac_CV.pdf";
+    link.onload = () => {
+      link.remove();
+      setDownloading(false);
+    };
+    document.body.appendChild(link);
+    link.click();
+  };
 
   return (
     // <p style={{ color: "grey" }}>Stay tuned for updates!</p>
@@ -85,9 +85,10 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
             <div className="buttonContainer">
               <button
                 className="btn downloadCV"
-                /*onClick={handleDownload}*/ disabled={downloading}
+                onClick={handleDownload}
+                disabled={downloading}
               >
-                {downloading ? "Downloading..." : "Download Resume"}
+                {downloading ? "Téléchargement..." : "Télécharger CV"}
               </button>{" "}
               <SocialIcons />
             </div>

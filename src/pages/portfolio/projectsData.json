@@ -1,11 +1,11 @@
 [
   {
     "title": "GameJam",
-    "image": "./projectImages/planner.png",
-    "technologies": "TypeScript | Vue | Phaser",
+    "image": "./projectImages/GameJam.png",
+    "technologies": "TypeScript | Vite | Phaser",
     "description": "Projet jeu-vidéo. Le but était de faire un jeu-vidéo finctionnel en JavaScript ou TypeScript, j'ai choisi d'utiliser la bibliothèque Phaser.",
     "github": "https://github.com/TimCauss/Project4-Game",
-    "deployed": "https://github.com/TimCauss/Project4-Game",
+    "deployed": "https://gamejam.tcaussignac.fr/",
     "bgcolor": "#3e67ff",
     "id": "1"
   },
@@ -33,9 +33,9 @@
     "title": "Wookies Adventures",
     "image": "./projectImages/StarWars.png",
     "technologies": "HTML | CSS | JS",
-    "description": " Découvrez une galaxie lointaine, une aventure sans pareille ! Notre agence de voyage immersive dans l'univers Star Wars vous transporte vers des mondes époustouflants et des destinations légendaires. Explorez les planètes emblématiques, rencontrez des personnages inoubliables et vivez une expérience unique digne des plus grands Jedi !",
+    "description": "Projet front d'une agence de voyage, language : HTML, CSS et JS Natif",
     "github": "https://github.com/TimCauss/agence-voyage",
-    "deployed": "https://github.com/TimCauss/agence-voyage",
+    "deployed": "https://wookies-adventures.tcaussignac.fr/index.html",
     "bgcolor": "#29cbe0",
     "id": "4"
   },
