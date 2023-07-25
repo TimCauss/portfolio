@@ -1,0 +1,62 @@
+[
+  {
+    "title": "GameJam",
+    "image": "./projectImages/GameJam.png",
+    "technologies": "TypeScript | Vite | Phaser",
+    "description": "Projet jeu-vidéo. Le but était de faire un jeu-vidéo finctionnel en JavaScript ou TypeScript, j'ai choisi d'utiliser la bibliothèque Phaser.",
+    "github": "https://github.com/TimCauss/Project4-Game",
+    "deployed": "https://gamejam.tcaussignac.fr/",
+    "bgcolor": "#3e67ff",
+    "id": "1"
+  },
+  {
+    "title": "Pokedex",
+    "image": "./projectImages/Pokedex.png",
+    "technologies": "JS | HTML | CSS | PHP | BootStrap | MySQL",
+    "description": "Site réalisé au cours d'un projet d'étude. Nous avons choisi le thème des Pokémons et avons créer une sorte de Pokedex qui repertorie les pokémons par type.",
+    "github": "https://github.com/TimCauss/projet_catalogue/",
+    "deployed": "https://pokedex.tcaussignac.fr/index.php",
+    "bgcolor": "#f85781",
+    "id": "2"
+  },
+  {
+    "title": "Pokemon Scrapper",
+    "image": "./projectImages/pokeScraper.png",
+    "technologies": "PYTHON | SELENIUM",
+    "description": "Petit script de scrapping et de remplissage de formulaire automatique fait en Python. Ce script a résolue le problème d'ajout de Pokémon dans le projet Pokedex. Son but est d'aller chercher les infos sur les pokémons sur internet et de remplir le formulaire d'ajout de pokémon sur notre site Pokedex.",
+    "github": "https://github.com/TimCauss/projet_catalogue/blob/main/script/add.py",
+    "deployed": "https://github.com/TimCauss/projet_catalogue/blob/main/script/add.py",
+    "bgcolor": "#6c4bf4",
+    "id": "3"
+  },
+  {
+    "title": "Wookies Adventures",
+    "image": "./projectImages/StarWars.png",
+    "technologies": "HTML | CSS | JS",
+    "description": "Projet front d'une agence de voyage, language : HTML, CSS et JS Natif",
+    "github": "https://github.com/TimCauss/agence-voyage",
+    "deployed": "https://wookies-adventures.tcaussignac.fr/index.html",
+    "bgcolor": "#29cbe0",
+    "id": "4"
+  },
+  {
+    "title": "RoboFriend",
+    "image": "./projectImages/robofriend.png",
+    "description": "Petite application afin de décrouvrir React, NodeJs et l'utilisation d'API.",
+    "technologies": "React | NodeJs | JS",
+    "github": "https://github.com/TimCauss/RoboFriend",
+    "deployed": "https://robofriend.tcaussignac.fr/",
+    "bgcolor": "#ffcc33",
+    "id": "5"
+  },
+  {
+    "title": "Jadoo",
+    "image": "./projectImages/Jadoo.png",
+    "description": "Premier projet de la certification, l'objectif était d'intégrer une maquette de restaurant asiatique à partir de figma. Le tout en HTML/CSS natif.",
+    "technologies": "HTML | CSS | Figma",
+    "github": "https://github.com/TimCauss/Formapro-Maquette-restaurant-1",
+    "deployed": "https://jadoo.tcaussignac.fr/",
+    "bgcolor": "#f37737",
+    "id": "6"
+  }
+]

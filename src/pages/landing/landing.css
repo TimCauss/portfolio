@@ -1,0 +1,51 @@
+/* --- MOBILE STYLES --- */
+
+.landing .name {
+  font-size: 48px;
+}
+
+.landing .description {
+  font-size: 22px;
+}
+
+.landingImage {
+  right: 0px;
+}
+
+/* .landing .socialIcons {
+  display: none;
+} */
+
+.landing .socialIcons {
+  display: flex;
+  position: absolute;
+  top: 20px;
+}
+
+.skillsAnimation {
+  width: 200px;
+}
+
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 750px) {
+  .landing .name {
+    font-size: 70px;
+  }
+
+  .landing .description {
+    font-size: 32px;
+  }
+
+  .landingImage {
+    bottom: 0;
+    right: 80px;
+  }
+
+  .landing .socialIcons {
+    flex-direction: column;
+    top: 85vh;
+    left: 20px
+  }
+}

@@ -1,0 +1,15 @@
+.logoHtml {
+    scale: 0.95;
+}
+
+.logoReact {}
+
+.logoPython {
+    scale: 0.7;
+    translate: 0 -5px;
+}
+
+.logoJS {
+    scale: 0.8;
+    translate: 0 -5px;
+}
