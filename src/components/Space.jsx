@@ -1,8 +1,7 @@
-import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-const Cursor = () => {
+const Space = () => {
   const particlesInit = async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -29,6 +28,17 @@ const Cursor = () => {
         },
         fpsLimit: 120,
         particles: {
+          shadow: {
+            blur: 5,
+            color: {
+              value: "#000000",
+            },
+            enable: true,
+            offset: {
+              x: 3,
+              y: 3,
+            },
+          },
           color: {
             value: "#ffffff",
           },
@@ -36,9 +46,10 @@ const Cursor = () => {
             color: "#ffffff",
             distance: 200,
             enable: true,
-            opacity: 0.05,
+            opacity: 0.02,
             width: 1,
           },
+
           move: {
             direction: "none",
             enable: true,
@@ -46,18 +57,19 @@ const Cursor = () => {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: { min: 0.5, max: 0.1 },
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              width: 500,
+              height: 500,
             },
-            value: 30,
+            value: 20,
           },
           opacity: {
-            value: { min: 0.2, max: 0.5 },
+            value: 0, //{ min: 0.3, max: 0.7 },
           },
           shape: {
             type: "circle",
@@ -71,15 +83,28 @@ const Cursor = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: "attract",
             },
             onHover: {
               enable: true,
-              mode: ["bubble", "grab", "attract"],
+              mode: ["bubble", "grab"],
+              parallax: {
+                enable: false,
+                force: 60,
+                smooth: 10,
+              },
             },
             resize: true,
           },
           modes: {
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+              speed: 1,
+              maxSpeed: 100,
+              factor: 100,
+              easing: "ease-out-quad",
+            },
             push: {
               quantity: 10,
             },
@@ -87,29 +112,53 @@ const Cursor = () => {
               distance: 200,
               duration: 2,
               size: 10,
-              opacity: 1,
-              color: "#009e66",
+              opacity: 0.8,
             },
             attract: {
-              distance: 100,
+              distance: 200,
               duration: 0.4,
-              factor: 3,
-              speed: 1,
+              factor: 30,
+              speed: 10,
               easing: "ease-out-quad",
             },
             grab: {
-              distance: "200",
-              radius: "200",
+              distance: 200,
               links: {
-                opacity: 1,
+                opacity: 0.7,
+              },
+            },
+            connect: {
+              distance: 150,
+              radius: 200,
+              links: {
+                opacity: 0.05,
               },
             },
           },
         },
         detectRetina: true,
+        /* absorbers: {
+          color: {
+            value: "#000000",
+          },
+          draggable: false,
+          opacity: 0,
+          destroy: false,
+          orbits: true,
+          size: {
+            value: 10,
+            density: 100,
+            radius: 0,
+            mass: 0,
+          },
+          position: {
+            x: 50,
+            y: 50,
+          },
+        }, */
       }}
     />
   );
 };
 
-export default Cursor;
+export default Space;

@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 // import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 import SkillsItems from "../../components/SkillsItems/SkillsItems";
-import Cursor from "../../components/Cursor";
+import Space from "../../components/Space";
 
 const Landing = ({ name }) => {
   const styles = {
@@ -32,9 +32,9 @@ const Landing = ({ name }) => {
   return (
     <section className="landing" id="repulsor" style={styles.landing}>
       {/* <Draw /> */}
-      <Cursor />
+      <Space />
       <div className="textContainer" style={styles.textContainer}>
-        <h1 className="name" style={styles.name}>
+        <h1 className="name" id="Name" style={styles.name}>
           {name}
         </h1>
         <div className="description">

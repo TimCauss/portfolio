@@ -1,6 +1,6 @@
 import aboutMeImg from "../images/aboutme.jpeg";
 import { motion } from "framer-motion";
-import SocialIcons from "../components/SocialIcons";
+import SocialIcons from "./SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import resume from "../pages/about/timothee-caussignac-cv.pdf";
