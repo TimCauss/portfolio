@@ -46,7 +46,7 @@ const Space = () => {
             color: "#ffffff",
             distance: 200,
             enable: true,
-            opacity: 0.02,
+            opacity: 0.05,
             width: 1,
           },
 
@@ -83,7 +83,7 @@ const Space = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "attract",
+              mode: "repulse",
             },
             onHover: {
               enable: true,
@@ -99,18 +99,17 @@ const Space = () => {
           modes: {
             repulse: {
               distance: 200,
-              duration: 0.4,
-              speed: 1,
+              duration: 0.2,
+              speed: 25,
               maxSpeed: 100,
-              factor: 100,
-              easing: "ease-out-quad",
+              factor: 200,
             },
             push: {
               quantity: 10,
             },
             bubble: {
               distance: 200,
-              duration: 2,
+              duration: 5,
               size: 10,
               opacity: 0.8,
             },
