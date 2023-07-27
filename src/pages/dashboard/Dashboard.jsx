@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../../components/PageHeader";
-import DashboardHeader from "../../components/DashboardHeaderjsx";
+import DashboardHeader from "../../components/DashboardHeader.jsx";
 
 export default function Dashboard() {
   return (
