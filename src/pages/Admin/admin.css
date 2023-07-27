@@ -1,0 +1,41 @@
+.loginError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.loginError .pageTitle {
+    border-bottom-color: #009e66;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+}
+
+.dashboardTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: var(--spacing);
+}
+
+#profilePicture {
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.dataInfos {
+    color: #009e66
+}
+
+.menuDashboard ul {
+    color: #fff; 
+    gap: var(--spacing);
+}

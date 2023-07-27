@@ -5,13 +5,22 @@ import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
 import PageNotFound from "../pages/404/PageNotFound";
+import Admin from "../pages/Admin/Admin";
 
 const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
     <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
+      <Route
+        path="/"
+        element={
+          <Landing
+            name={personalDetails.name}
+            tagline={personalDetails.tagline}
+          />
+        }
+      />
       <Route
         path="/about"
         element={
@@ -28,9 +37,15 @@ const AnimatedRoutes = ({ personalDetails }) => {
       <Route
         path="/contact"
         element={
-          <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
+          <Contact
+            name={personalDetails.name}
+            location={personalDetails.location}
+            email={personalDetails.email}
+          />
         }
       />
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/blog" element={<Admin />} />
       <Route path="/page-not-found" element={<PageNotFound />} />
       <Route path="*" element={<Navigate to="/page-not-found" />} />
     </Routes>
