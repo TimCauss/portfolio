@@ -28,7 +28,7 @@ const Space = () => {
         },
         fpsLimit: 120,
         particles: {
-          shadow: {
+          /* shadow: {
             blur: 5,
             color: {
               value: "#000000",
@@ -38,7 +38,7 @@ const Space = () => {
               x: 3,
               y: 3,
             },
-          },
+          }, */
           color: {
             value: "#ffffff",
           },

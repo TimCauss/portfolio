@@ -45,7 +45,6 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/blog" element={<Admin />} />
       <Route path="/page-not-found" element={<PageNotFound />} />
       <Route path="*" element={<Navigate to="/page-not-found" />} />
     </Routes>

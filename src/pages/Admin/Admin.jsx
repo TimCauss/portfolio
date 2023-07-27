@@ -1,8 +1,4 @@
-import {
-  useLogoutFunction,
-  useRedirectFunctions,
-  useAuthInfo,
-} from "@propelauth/react";
+import { useRedirectFunctions, useAuthInfo } from "@propelauth/react";
 import React from "react";
 import PageHeader from "../../components/PageHeader";
 import Dashboard from "../../components/Dashboard";
@@ -10,18 +6,7 @@ import Dashboard from "../../components/Dashboard";
 const Admin = (props) => {
   const authInfo = useAuthInfo();
 
-  const {
-    redirectToLoginPage,
-    redirectToSignupPage,
-    redirectToAccountPage,
-  } = useRedirectFunctions();
-  const logoutFunction = useLogoutFunction();
-
-  const styles = {
-    p: {
-      color: "#ffff",
-    },
-  };
+  const { redirectToLoginPage } = useRedirectFunctions();
 
   if (authInfo.isLoggedIn) {
     return (
@@ -35,7 +20,7 @@ const Admin = (props) => {
   } else {
     return (
       <section className="loginError">
-        <PageHeader title="Vous n'etes pas connecté" description="Login" />
+        <PageHeader title="Vous n'etes pas connecté" />
         <div className="col btnContainer">
           <button className="btn " onClick={redirectToLoginPage}>
             Login

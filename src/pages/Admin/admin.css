@@ -29,6 +29,8 @@
     position: absolute;
     top: 30px;
     left: 50px;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .dataInfos {
@@ -36,6 +38,6 @@
 }
 
 .menuDashboard ul {
-    color: #fff; 
+    color: #fff;
     gap: var(--spacing);
 }
