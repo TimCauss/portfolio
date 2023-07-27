@@ -9,7 +9,7 @@ const NavLinks = () => {
   return (
     <>
       <button
-        className="dropdown-toggle"
+        className="dropdown-toggle"   
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? (

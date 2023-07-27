@@ -1,7 +1,7 @@
 import { useRedirectFunctions, useAuthInfo } from "@propelauth/react";
 import React from "react";
 import PageHeader from "../../components/PageHeader";
-import Dashboard from "../../components/Dashboard";
+import Dashboard from "../dashboard/Dashboard";
 
 const Admin = (props) => {
   const authInfo = useAuthInfo();
