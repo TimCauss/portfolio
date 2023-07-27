@@ -1,5 +1,4 @@
 import Typewriter from "typewriter-effect";
-// import Draw from "../../components/Draw";
 import SocialIcons from "../../components/SocialIcons";
 import SkillsItems from "../../components/SkillsItems/SkillsItems";
 import Space from "../../components/Space";
@@ -31,7 +30,6 @@ const Landing = ({ name }) => {
 
   return (
     <section className="landing" id="repulsor" style={styles.landing}>
-      {/* <Draw /> */}
       <Space />
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" id="Name" style={styles.name}>
