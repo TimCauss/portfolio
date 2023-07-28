@@ -3,7 +3,7 @@ import React from "react";
 import PageHeader from "../../components/PageHeader";
 import Dashboard from "../dashboard/Dashboard";
 
-const Admin = (props) => {
+const Admin = () => {
   const authInfo = useAuthInfo();
 
   const { redirectToLoginPage } = useRedirectFunctions();
@@ -11,11 +11,6 @@ const Admin = (props) => {
   if (authInfo.isLoggedIn) {
     return (
       <Dashboard />
-      // <div>
-      //   <p style={styles.p}>You are logged in as {authInfo.user.email}</p>
-      //   <button onClick={redirectToAccountPage}>Account</button>
-      //   <button onClick={logoutFunction}>Logout</button>
-      // </div>
     );
   } else {
     return (

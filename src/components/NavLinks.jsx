@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
+import AdminNavLink from "./AdminNavLink";
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +33,7 @@ const NavLinks = () => {
         <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
           Contact
         </NavLink>
-        <NavLink to="/admin" onClick={() => setIsMenuOpen(false)}>
-          Admin
-        </NavLink>
+        <AdminNavLink />
       </nav>
     </>
   );

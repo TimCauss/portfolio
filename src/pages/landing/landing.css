@@ -12,16 +12,6 @@
   right: 0px;
 }
 
-/* .landing .socialIcons {
-  display: none;
-} */
-
-.landing .socialIcons {
-  display: flex;
-  position: absolute;
-  top: 20px;
-}
-
 .skillsAnimation {
   width: 200px;
 }
@@ -44,8 +34,10 @@
   }
 
   .landing .socialIcons {
+    display: flex;
+    position: absolute;
     flex-direction: column;
-    top: 85vh;
+    bottom: 50px;
     left: 20px
   }
 }

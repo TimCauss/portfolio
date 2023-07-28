@@ -29,7 +29,7 @@ const Landing = ({ name }) => {
   };
 
   return (
-    <section className="landing" id="repulsor" style={styles.landing}>
+    <section className="landing" style={styles.landing}>
       <Space />
       <div className="textContainer" style={styles.textContainer}>
         <h1 className="name" id="Name" style={styles.name}>

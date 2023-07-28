@@ -1,10 +1,10 @@
 import NavLinks from "./NavLinks";
-import logo from "../images/logo.svg";
+import ProfilInfo from "./ProfilInfo";
 
 const Header = () => {
   return (
     <header className="header">
-      <img className="logo" src={logo} alt="Caussignac Timothée Logo" />
+      <ProfilInfo />
       <NavLinks />
     </header>
   );
