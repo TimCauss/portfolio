@@ -8,10 +8,11 @@ const Admin = () => {
 
   const { redirectToLoginPage } = useRedirectFunctions();
 
-  if (authInfo.isLoggedIn) {
-    return (
-      <Dashboard />
-    );
+  if (
+    authInfo.isLoggedIn &&
+    authInfo.user.userId === process.env.REACT_APP_ADMIN_ID
+  ) {
+    return <Dashboard />;
   } else {
     return (
       <section className="loginError">

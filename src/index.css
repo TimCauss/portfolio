@@ -112,9 +112,16 @@ header {
   z-index: 9;
 }
 
-.logo {
-  height: 50px;
-  opacity: 0;
+
+#profilePicture {
+  width: 50px;
+  top: 30px;
+  left: 50px;
+  cursor: pointer;
+}
+
+.btnProfile {
+  margin-top: 17px;
 }
 
 .links {

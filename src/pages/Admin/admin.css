@@ -24,14 +24,6 @@
     margin-top: var(--spacing);
 }
 
-#profilePicture {
-    width: 50px;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    cursor: pointer;
-    z-index: 999;
-}
 
 .dataInfos {
     color: #009e66

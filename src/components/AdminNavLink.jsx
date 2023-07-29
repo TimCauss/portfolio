@@ -10,7 +10,14 @@ export default function AdminNavLink() {
     authInfo.user.userId === process.env.REACT_APP_ADMIN_ID
   ) {
     return (
-      <NavLink to="/admin" onClick={() => setIsMenuOpen(false)}>
+      <NavLink
+        to="/admin"
+        onClick={() => setIsMenuOpen(false)}
+        logged={authInfo.isLoggedIn.toString()}
+        admin={(
+          authInfo.user.userId === process.env.REACT_APP_ADMIN_ID
+        ).toString()}
+      >
         Admin
       </NavLink>
     );

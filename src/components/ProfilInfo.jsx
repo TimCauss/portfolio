@@ -8,7 +8,6 @@ const ProfilInfo = () => {
   if (authInfo.isLoggedIn) {
     return (
       <div>
-        
         <img
           id="profilePicture"
           onClick={redirectToAccountPage}
@@ -18,7 +17,7 @@ const ProfilInfo = () => {
     );
   } else {
     return (
-      <button className="btn" onClick={redirectToLoginPage}>
+      <button className="btn btnProfile" onClick={redirectToLoginPage}>
         Login
       </button>
     );
