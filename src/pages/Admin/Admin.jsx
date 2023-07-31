@@ -1,32 +1,24 @@
-import { useRedirectFunctions, useAuthInfo } from "@propelauth/react";
-import React from "react";
-import PageHeader from "../../components/PageHeader";
+import { useEffect, useState } from "react";
 import Dashboard from "../dashboard/Dashboard";
+import { useAuthInfo } from "@propelauth/react";
 
 const Admin = () => {
   const authInfo = useAuthInfo();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
-  const { redirectToLoginPage } = useRedirectFunctions();
+  useEffect(() => {
+    if (
+      authInfo.isLoggedIn &&
+      authInfo.user.userId === process.env.REACT_APP_ADMIN_ID
+    ) {
+      setIsLoggedIn(true);
+      setIsAdmin(true);
+    }
+  });
 
-  if (
-    authInfo.isLoggedIn &&
-    authInfo.user.userId === process.env.REACT_APP_ADMIN_ID
-  ) {
+  if (isLoggedIn && isAdmin) {
     return <Dashboard />;
-  } else {
-    return (
-      <section className="loginError">
-        <PageHeader title="Vous n'etes pas connecté" />
-        <div className="col btnContainer">
-          <button className="btn " onClick={redirectToLoginPage}>
-            Login
-          </button>
-          {/*           <button className="btn" onClick={redirectToSignupPage}>
-            Signup
-          </button> */}
-        </div>
-      </section>
-    );
   }
 };
 
