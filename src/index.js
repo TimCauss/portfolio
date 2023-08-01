@@ -11,6 +11,7 @@ import "./pages/contact/contact.css";
 import "./pages/404/pageNotFound.css";
 import "./pages/Admin/admin.css";
 import "./components/SkillsItems/skillsitems.css";
+import "./pages/dashboard/ListDashboard.css";
 
 import App from "./App";
 

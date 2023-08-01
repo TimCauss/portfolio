@@ -2,9 +2,10 @@ import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
 
+
 const Portfolio = () => {
   const ProjectList = () =>
-    projectData.map((project, i) => (
+    projectData.Projects.map((project, i) => (
       <Project
         key={i}
         id={project.id}

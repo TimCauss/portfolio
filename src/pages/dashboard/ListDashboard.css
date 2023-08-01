@@ -1,0 +1,15 @@
+.dashboardTitle td,
+.dashboardTitle th {
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.dashboardTitle td {
+    border-color: antiquewhite;
+    padding: 5 10;
+    overflow-y: auto;
+}
+
+.dashboardTitle td.list-project-color {
+    width: 20px
+}
