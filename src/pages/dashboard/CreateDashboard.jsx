@@ -59,7 +59,11 @@ const CreateDashboard = (props) => {
         />
       </div>
       <div className="modal-footer">
-        <button type="button" className="btn" onClick={props.createProject}>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => props.createProject}
+        >
           Create
         </button>
       </div>

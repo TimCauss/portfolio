@@ -1,15 +1,16 @@
 .dashboardTitle td,
-.dashboardTitle th {
-    color: white;
-    padding: 5 10;
+.dashboardTitle th,
+.dashboardTitle tr {
+    color: rgb(149, 149, 149);
+    padding: 5px 10px;
     background-color: #2b2b2b;
+    border: 1px inset #4b4b4b;
 }
 
 .dashboardTitle td {
-    border-color: antiquewhite;
-    overflow-y: auto;
+    color: rgb(209, 209, 209);
 }
 
 .dashboardTitle td.list-project-color {
-    width: 20px
+    width: 100px
 }

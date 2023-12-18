@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
 import AdminNavLink from "./AdminNavLink";
@@ -11,7 +10,7 @@ const NavLinks = () => {
   return (
     <>
       <button
-        className="dropdown-toggle"   
+        className="dropdown-toggle"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? (
@@ -30,8 +29,11 @@ const NavLinks = () => {
         <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
           Portfolio
         </NavLink>
-        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
-          Contact
+        <NavLink
+          to="https://blog.tcaussignac.fr"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Blog
         </NavLink>
         <AdminNavLink />
       </nav>

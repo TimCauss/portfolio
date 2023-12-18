@@ -10,38 +10,21 @@ function ListDashboard(props) {
         <td>{element.id}</td>
         <td>{element.title}</td>
         <td>
-          <img src={element.image} width={"50px"} />
+          <img src={element.image} width={"150px"} />
         </td>
-        <td>{element.technologies.substring(0, 10) + "..."}</td>
-        <td>{element.description.substring(0, 10) + "..."}</td>
+        <td>{element.technologies.substring(0, 20) + "..."}</td>
+        <td>{element.description.substring(0, 25) + "..."}</td>
         <td
           className="list-project-color"
           style={{ backgroundColor: `${element.bgcolor}` }}
         >
           &nbsp;
         </td>
-        <td>
-          {/*           <UpdateList
-            elementId={element.id}
-            singledata={props.singledata}
-            getList={props.getList}
-            updateList={props.updateList}
-            handleChange={props.handleChange}
-          ></UpdateList> */}
-        </td>
-        <td>
-          {/*           <DeleteList
-            elementId={element.id}
-            singledata={props.singledata}
-            getList={props.getList}
-            deleteList={props.deleteList}
-          ></DeleteList> */}
-        </td>
       </tr>
     );
   });
   return (
-    <table className="table table-striped">
+    <table className="pb-5">
       <thead>
         <tr>
           <th>#</th>
@@ -49,6 +32,7 @@ function ListDashboard(props) {
           <th>Image</th>
           <th>Technologies</th>
           <th>Description</th>
+          <th>bg</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
