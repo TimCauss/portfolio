@@ -106,8 +106,8 @@ header {
   padding: var(--sm-spacing) var(--spacing);
   color: var(--text-color);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   background-color: var(--bg-color);
   z-index: 9;
 }

@@ -6,7 +6,7 @@ function App() {
     name: "Timothée Caussignac",
     location: "Saint-Nazaire, FR",
     email: "contact@tcaussignac.fr",
-    availability: "Freelance et Alternance",
+    availability: "Alternance et Freelance",
     brand:
       "Passionné par le développement et fasciné par la cybersécurité, je suis déterminé à créer des expériences digitales innovantes et sécurisées. N'hésitez pas à me contacter pour collaborer sur des projets passionnants et sécurisés ensemble !",
   };
