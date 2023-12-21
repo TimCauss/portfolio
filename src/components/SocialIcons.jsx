@@ -24,7 +24,7 @@ const SocialIcons = () => {
       <a
         className="icon"
         style={styles.icon}
-        href="https://www.linkedin.com/in/timoth%C3%A9e/"
+        href="https://www.linkedin.com/in/timcauss/"
       >
         <i
           className="fa-brands fa-linkedin"
