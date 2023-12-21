@@ -4,7 +4,6 @@ import ProfilInfo from "./ProfilInfo";
 const Header = () => {
   return (
     <header className="header">
-      <ProfilInfo />
       <NavLinks />
     </header>
   );
