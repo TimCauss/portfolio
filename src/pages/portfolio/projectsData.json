@@ -1,6 +1,16 @@
 {
   "Projects": [
     {
+      "title": "InstaPy",
+      "image": "./projectImages/instapy.png",
+      "technologies": "Python POO | Multithreading | SELENIUM | PyQt5",
+      "description": "Projet carte blanche pendant mon bac+2. J'ai décidé de faire un Bruteforcer avec une UI en python qui utilise Selenium pour automatiser les entrées. Le but était de me faire la main sur des outils que j'allais par la suite utiliser en stage.",
+      "github": "https://github.com/TimCauss/InstaPy",
+      "deployed": "https://github.com/TimCauss/InstaPy",
+      "bgcolor": "#f37737",
+      "id": "0"
+    },
+    {
       "title": "GameJam",
       "image": "./projectImages/GameJam.png",
       "technologies": "TypeScript | Vite | Phaser",
