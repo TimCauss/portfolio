@@ -16,6 +16,13 @@
   width: 200px;
 }
 
+.landing .socialIcons {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  scale: 1.5;
+  transition: all;
+}
 
 /* --- MEDIA QUERIES --- */
 
@@ -34,10 +41,7 @@
   }
 
   .landing .socialIcons {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    bottom: 50px;
-    left: 20px
+    scale: 1;
+    top: 15px;
   }
 }
